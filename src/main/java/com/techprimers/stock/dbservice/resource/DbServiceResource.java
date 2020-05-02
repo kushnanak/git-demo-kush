@@ -29,6 +29,7 @@ public class DbServiceResource {
                 .map(quote -> new Quote(quotes.getUserName(), quote))
                 .forEach(quote -> quetesRepository.save(quote));
 
+
         return getQuotesByUserName(quotes.getUserName());
     }
 
