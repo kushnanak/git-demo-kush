@@ -16,6 +16,7 @@ public class DbServiceResource {
     @Autowired
     private QuetesRepository quetesRepository;
 
+
     @PostMapping("/delete/{username}")
     public List<String> delete(@PathVariable("username") final String username) {
 
